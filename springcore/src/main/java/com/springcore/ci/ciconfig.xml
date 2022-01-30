@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.springcore.ci.Certi" name="cer1">
+<constructor-arg  value="a java full course in just 3 month"/>
+</bean>
+
+<bean class="com.springcore.ci.Person" name="p1">
+<constructor-arg value="12" index="1" />
+<constructor-arg value="145" index="0" />
+<constructor-arg value="kanika" />
+<constructor-arg ref="cer1" />
+<constructor-arg>
+<list>
+<value>kanika
+</value>
+<value>kashish
+</value>
+<value>keshav
+</value>
+</list>
+</constructor-arg>
+
+</bean>
+</beans>

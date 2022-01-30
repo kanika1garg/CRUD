@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+       
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:p="http://www.springframework.org/schema/p"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean class="com.springcore.Student" name="student1">
+   <property name="studentID">
+         <value>22344</value>
+      </property>
+     <property name="studentName">
+         <value>kanika</value>
+      </property>
+       <property name="studentAddress">
+           <value>Delhi </value>
+         </property>
+         <property name="phones">
+         <list>
+         <value>123654
+         </value>
+         <value>18565
+         </value>
+         <value>65662</value>
+         </list></property>
+<property name="props">
+
+<props>
+  <prop key="name">kanika</prop>
+  <prop key="age">21</prop>
+  <prop key="qualification">MCA</prop>
+</props>
+
+</property>
+</bean>
+<bean class="com.springcore.Student" name="student2">
+   <property name="studentID">
+         <value>024</value>
+      </property>
+     <property name="studentName">
+         <value>manika</value>
+      </property>
+       <property name="studentAddress">
+           <value>luckhnow </value>
+         </property>
+
+</bean>
+<bean class="com.springcore.Student" name="student3" p:studentID="256348" p:studentName="kashish" p:studentAddress="pilkhuwa">
+</bean>
+
+
+
+ </beans>
+ 
